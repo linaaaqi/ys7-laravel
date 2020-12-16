@@ -29,7 +29,7 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
             'ys7'
         );
 
-        $this->app->instance(YS7Client::class, function () {
+        $this->app->singleton(YS7Client::class, function () {
             $appKey = config('ys7.app_key');
             $appSecret = config('ys7.app_secret');
 
