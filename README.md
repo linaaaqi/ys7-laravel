@@ -9,9 +9,16 @@
 $ composer require losgif/ys7-laravel -vvv
 ```
 
-## Usage
+## Configure
+
+```shell
+$ php artisan vendor:publish --provider="Losgif\YS7\YS7ServiceProvider"
+```
+
+### Usage
 
 TODO
+
 
 ## Contributing
 
