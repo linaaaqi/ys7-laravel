@@ -1,0 +1,29 @@
+{
+    "name": "losgif\/ys7-laravel",
+    "description": "海康威视设备萤石开放平台(萤石云)PHP SDK,用于接入海康设备直播,通信等功能",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "losgif",
+            "email": "losgif@gmail.com"
+        }
+    ],
+    "require": {
+        "neteast/ys7": "^0.2.0"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "losgif\\ys7-laravel\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Losgif\\YS7\\YS7ServiceProvider"
+            ]
+        }
+    }
+}
