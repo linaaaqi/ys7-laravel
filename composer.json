@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "losgif\\ys7-laravel\\": "src"
+            "Losgif\\YS7\\": "src"
         }
     },
     "extra": {
