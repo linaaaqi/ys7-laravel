@@ -8,6 +8,13 @@ use Illuminate\Support\ServiceProvider;
 class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**
+     * Abstract type to bind YS7 Client as in the Service Container.
+     *
+     * @var string
+     */
+    public static $abstract = 'ys7client';
+
+    /**
      * 启动应用服务
      *
      * @return void
@@ -38,7 +45,7 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
             return new YS7Client($auth);
         });
 
-        $this->app->alias(YS7Client::class, 'ys7client');
+        $this->app->alias(YS7Client::class, static::$abstract);
     }
 
     /**
@@ -49,7 +56,7 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
     public function provides(): array
     {
         return [
-            YS7Client::class, 'ys7client'
+            static::$abstract
         ];
     }
 }
