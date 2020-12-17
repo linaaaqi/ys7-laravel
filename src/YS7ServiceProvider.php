@@ -12,7 +12,7 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
      *
      * @var string
      */
-    public static $abstract = 'ys7client';
+    public static $abstract = 'ys7';
 
     /**
      * 启动应用服务
