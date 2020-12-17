@@ -1,6 +1,6 @@
 {
     "name": "losgif\/ys7-laravel",
-    "description": "海康威视设备萤石开放平台(萤石云)PHP SDK,用于接入海康设备直播,通信等功能",
+    "description": "海康威视设备萤石开放平台(萤石云)Laravel SDK,用于接入海康设备直播,通信等功能",
     "license": "MIT",
     "authors": [
         {
