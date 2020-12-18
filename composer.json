@@ -9,8 +9,8 @@
         }
     ],
     "require": {
-        "laravel/framework": "^7.0",
-        "losgif/ys7": "dev-master"
+        "laravel/framework": "^7.0 || ^8.0",
+        "losgif/ys7": "^0.3.1"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
