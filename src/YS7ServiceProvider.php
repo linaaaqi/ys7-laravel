@@ -1,6 +1,6 @@
 <?php
 
-namespace Losgif\YS7;
+namespace Losgif\YS7Laravel;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;

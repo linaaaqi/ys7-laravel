@@ -1,6 +1,6 @@
 <?php
 
-namespace Losgif\YS7;
+namespace Losgif\YS7Laravel;
 
 use PHPUnit\Framework\TestCase;
 

@@ -9,20 +9,21 @@
         }
     ],
     "require": {
-        "neteast/ys7": "^0.2.0"
+        "laravel/framework": "^7.0",
+        "losgif/ys7": "^0.2.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Losgif\\YS7\\": "src"
+            "Losgif\\YS7Laravel\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Losgif\\YS7\\YS7ServiceProvider"
+                "Losgif\\YS7Laravel\\YS7ServiceProvider"
             ]
         }
     }

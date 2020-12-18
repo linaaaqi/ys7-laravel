@@ -1,16 +1,17 @@
 <?php
 
-namespace Losgif\YS7\Facades;
+namespace Losgif\YS7Laravel\Facades;
 
+use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Facade;
-use Neteast\YS7\Clients\Device\DeviceClient;
+use Losgif\YS7\Clients\Device\DeviceClient;
 
 /**
  * Class YS7
  *
- * @method static DeviceClient device()
+ * @property DeviceClient $device
  *
- * @package Losgif\YS7\Facades
+ * @package Losgif\YS7Laravel\Facades
  */
 class YS7 extends Facade
 {
@@ -27,7 +28,7 @@ class YS7 extends Facade
     /**
      * @return \Illuminate\Contracts\Foundation\Application|mixed
      */
-    public static function auth()
+    public static function auth(): Application
     {
         return app('ys7.auth');
     }
