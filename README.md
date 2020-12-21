@@ -3,19 +3,19 @@
 <p align="center"> 海康威视设备萤石开放平台(萤石云)Laravel SDK,用于接入海康设备直播,通信等功能.</p>
 
 
-## Installing
+## Installing | 安装扩展
 
 ```shell
 $ composer require losgif/ys7-laravel -vvv
 ```
 
-## Configure
+## Configure ｜ 配置扩展
 
 ```shell
-$ php artisan vendor:publish --provider="Losgif\YS7\YS7ServiceProvider"
+$ php artisan vendor:publish --provider="Losgif\YS7Laravel\YS7ServiceProvider"
 ```
 
-### Usage
+### Usage ｜ 如何使用
 
 TODO
 
