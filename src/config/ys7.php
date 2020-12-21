@@ -19,5 +19,15 @@ return [
     /**
      * 萤石云监控视频路径前缀
      */
-    'capture_picture_url_prefix' => env('YS7_CAPTURE_PICTURE_URL_PREFIX', 'capture_picture_url_')
+    'capture_picture_url_prefix' => env('YS7_CAPTURE_PICTURE_URL_PREFIX', 'capture_picture_url_'),
+
+    /**
+     * 萤石云Access Token缓存前缀
+     */
+    'access_token_cache_prefix' => env('YS7_ACCESS_TOKEN_CACHE_PREFIX', 'ys7_'),
+
+    /**
+     * 萤石云Access Token有限时间
+     */
+    'access_token_valid_days' => env('YS7_ACCESS_TOKEN_VALID_DAYS', 7),
 ];
