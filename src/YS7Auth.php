@@ -20,7 +20,7 @@ class YS7Auth extends \Losgif\YS7\YS7Auth
         $accessToken = Cache::get($cachePrefix . self::ACCESS_TOKEN_NAME);
 
         if (empty($accessToken)) {
-            $accessToken = $client->token()->getToken($this);
+            $accessToken = $client->token()->getToken($this)->getAccessToken();
             Cache::put($cachePrefix . self::ACCESS_TOKEN_NAME, $accessToken, $this->getValidDays());
         }
 
