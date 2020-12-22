@@ -2,15 +2,23 @@
     "name": "losgif\/ys7-laravel",
     "description": "海康威视设备萤石开放平台(萤石云)Laravel SDK,用于接入海康设备直播,通信等功能",
     "license": "MIT",
+    "keywords": [
+        "海康威视",
+        "萤石",
+        "Hikvision"
+    ],
+    "homepage": "https://github.com/losgif/ys7-laravel",
     "authors": [
         {
             "name": "losgif",
-            "email": "losgif@gmail.com"
+            "email": "losgif@gmail.com",
+            "homepage": "https://github.com/losgif",
+            "role": "Developer"
         }
     ],
     "require": {
         "laravel/framework": "^6.9|^7.0|^8.0",
-        "losgif/ys7": "^0.4"
+        "losgif/ys7": "^0.5"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
@@ -19,15 +27,22 @@
     },
     "autoload": {
         "psr-4": {
-            "Losgif\\YS7Laravel\\": "src",
-            "Losgif\\YS7Laravel\\Tests": "tests"
+            "Losgif\\YS7Laravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Losgif\\YS7Laravel\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Losgif\\YS7Laravel\\YS7ServiceProvider"
-            ]
+            ],
+            "aliases": {
+                "YS7": "Losigf\\YS7Laravel\\Facades\\YS7"
+            }
         }
     }
 }
