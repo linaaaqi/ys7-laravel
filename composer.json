@@ -20,7 +20,7 @@
     "autoload": {
         "psr-4": {
             "Losgif\\YS7Laravel\\": "src",
-            "Losgif\\YS7Laravel\\Tests": "tests"
+            "Losgif\\YS7Laravel\\Tests\\": "tests"
         }
     },
     "extra": {
