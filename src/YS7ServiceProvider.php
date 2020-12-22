@@ -5,6 +5,11 @@ namespace Losgif\YS7Laravel;
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\ServiceProvider;
 
+/**
+ * Class YS7ServiceProvider
+ *
+ * @package Losgif\YS7Laravel
+ */
 class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
 {
     /**

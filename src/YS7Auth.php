@@ -4,8 +4,16 @@ namespace Losgif\YS7Laravel;
 
 use Illuminate\Support\Facades\Cache;
 
+/**
+ * Class YS7Auth
+ *
+ * @package Losgif\YS7Laravel
+ */
 class YS7Auth extends \Losgif\YS7\YS7Auth
 {
+    /**
+     * Access Token Name
+     */
     private const ACCESS_TOKEN_NAME = 'access_token';
 
     /**

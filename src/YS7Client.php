@@ -2,6 +2,11 @@
 
 namespace Losgif\YS7Laravel;
 
+/**
+ * Class YS7Client
+ *
+ * @package Losgif\YS7Laravel
+ */
 class YS7Client extends \Losgif\YS7\YS7Client
 {
     /**
