@@ -20,15 +20,18 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
     public static $abstract = 'ys7';
 
     /**
-     * 启动应用服务
-     *
-     * @return void
+     * Setup the configuration's file.
      */
-    public function boot(): void
+    public function setupConfig()
     {
         $this->publishes([
             __DIR__.'/config/ys7.php' => config_path('ys7.php'),
         ]);
+
+        $this->mergeConfigFrom(
+            __DIR__.'/config/ys7.php',
+            'ys7'
+        );
     }
 
     /**
@@ -36,10 +39,7 @@ class YS7ServiceProvider extends ServiceProvider implements DeferrableProvider
      */
     public function register(): void
     {
-        $this->mergeConfigFrom(
-            __DIR__.'/config/ys7.php',
-            'ys7'
-        );
+        $this->setupConfig();
 
         $this->app->singleton(YS7Auth::class, function () {
             $appKey = config('ys7.app_key');

@@ -2,28 +2,21 @@
 
 namespace Losgif\YS7Laravel\Facades;
 
-use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Support\Facades\Facade;
 use Losgif\YS7\Clients;
+use Losgif\YS7\YS7Auth;
 
 /**
  * Class YS7
  *
- * @property Clients\AI\AIClient         $ai     AI
- * @property Clients\Device\DeviceClient $device 设备
- * @property Clients\EZOpen              $ezopen ezopen
- * @property Clients\LiveClient          $live   直播
- * @property Clients\MQ\MQClient         $mq     消息
- * @property Clients\RAM\RAMClient       $ram    子账户
- * @property Clients\TokenClient         $token  令牌
- *
- * @method Clients\AI\AIClient ai()
- * @method Clients\Device\DeviceClient device()
- * @method Clients\EZOpen ezopen()
- * @method Clients\LiveClient live()
- * @method Clients\MQ\MQClient mq()
- * @method Clients\RAM\RAMClient ram()
- * @method Clients\TokenClient token()
+ * @method static Clients\AI\AIClient ai()             AI
+ * @method static Clients\Device\DeviceClient device() 设备
+ * @method static Clients\EZOpen ezopen()              ezopen
+ * @method static Clients\LiveClient live()            直播
+ * @method static Clients\MQ\MQClient mq()             消息
+ * @method static Clients\RAM\RAMClient ram()          子账户
+ * @method static Clients\TokenClient token()          令牌
+ * @method static YS7Auth getAuth()                    认证
  *
  * @package Losgif\YS7Laravel\Facades
  */
@@ -37,13 +30,5 @@ class YS7 extends Facade
     protected static function getFacadeAccessor(): string
     {
         return 'ys7';
-    }
-
-    /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Losgif\YS7Laravel\YS7Auth|mixed
-     */
-    public static function auth(): Application
-    {
-        return app('ys7.auth');
     }
 }
